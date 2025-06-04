@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday My Love!</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body onload="confettiBurst();">
+  <div class="container">
+    <h1>Happy Birthday My Love 🎂❤️</h1>
+    <img src="images/birthday.jpg" alt="Birthday Pic" class="question-img">
+    <p>You're the reason I smile a little more every day. Thank you for being you. I love you more than words can say.</p>
+    <button onclick="location.href='index.html'">Replay Our Love Story</button>
+  </div>
+
+  <script>
+    function confettiBurst() {
+      confetti({
+        particleCount: 200,
+        spread: 100,
+        origin: { y: 0.6 }
+      });
+    }
+  </script>
+</body>
+</html>
